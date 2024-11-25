@@ -751,7 +751,7 @@ async function main() {
     );
     const req = await fetch(url, {
         mode: "cors", // no-cors, *cors, same-origin
-        credentials: "*", // include, *same-origin, omit
+        credentials: "no-cors", // include, *same-origin, omit
     });
     console.log(req);
     if (req.status != 200)
