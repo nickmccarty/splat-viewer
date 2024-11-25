@@ -750,8 +750,8 @@ async function main() {
         "https://github.com/nickmccarty/splat-viewer/raw/refs/heads/main/",
     );
     const req = await fetch(url, {
-        mode: "cors", // no-cors, *cors, same-origin
-        credentials: "*same-origin", // include, *same-origin, omit
+        mode: "no-cors", // no-cors, *cors, same-origin
+        credentials: "omit", // include, *same-origin, omit
     });
     console.log(req);
     if (req.status != 200)
