@@ -747,10 +747,10 @@ async function main() {
         // "nike.splat",
         // location.href,
         params.get("url") || "sequim-shipwreck.splat",
-        "https://huggingface.co/nickmccarty/splat-data/resolve/main",
+        "https://huggingface.co/nickmccarty/splat-data/resolve/main/",
     );
     const req = await fetch(url, {
-        mode: "no-cors", // no-cors, *cors, same-origin
+        mode: "cors", // no-cors, *cors, same-origin
         credentials: "omit", // include, *same-origin, omit
     });
     console.log(req);
