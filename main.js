@@ -746,7 +746,7 @@ async function main() {
     const url = new URL(
         // "nike.splat",
         // location.href,
-        params.get("url") || "sequim-shipwreck.splat",
+        params.get("url") || "small-city.splat",
         "https://huggingface.co/nickmccarty/splat-data/resolve/main/",
     );
     const req = await fetch(url, {
